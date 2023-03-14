@@ -5,27 +5,33 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        // width: 350,
-        // height: 400,
-        // margin: EdgeInsets.only(left: 70.0, right: 40),
-        // padding: const EdgeInsets.all(75.0),
-        alignment: Alignment.center,
-        color: Colors.purple,
-        child: const Text("Hello", textDirection: TextDirection.ltr,
-          style: TextStyle(
-            decoration: TextDecoration.none,
-            fontSize: 75.0,
-            fontFamily: 'Raleway',
-            fontWeight: FontWeight.w300,
-            color: Colors.white,
-            fontStyle: FontStyle.italic
-
-          )
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            "Container",
+            style: TextStyle(color: Colors.white),
+          ),
         ),
-      ),
+        body: Center(
+          child: Container(
+            height: 100,
+            width: 300,
+            color: Colors.grey,
+            child: const Center(
+              child:  Text("Hello",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                      decoration: TextDecoration.none,
+                      fontSize: 75.0,
+                      fontFamily: 'Raleway',
+                      fontWeight: FontWeight.w300,
+                      color: Colors.black,
+                      fontStyle: FontStyle.italic,
+                  )
+              ),
+            ),
+          ),
+        )
     );
   }
-
 }

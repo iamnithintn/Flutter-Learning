@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:rowsandcolumns/row.dart';
 import 'package:rowsandcolumns/rowsandcols.dart';
+import 'package:rowsandcolumns/ytrowsandcolumns.dart';
 import 'column.dart';
 
 void main() {
-  runApp( MaterialApp(
+  runApp( const MaterialApp(
     debugShowCheckedModeBanner: false,
-    title: "Row",
-    home: RowsAndCols(),
+    title: "Rows and Columns",
+    home: YtRowsAndColumns(),
   )
   );
 }

@@ -31,42 +31,77 @@ class MyHomePage extends StatelessWidget {
        ),
 
        body:
-
-       // TextButton(
-       //   child: const Text('Click Me!!!'),
-       //   onPressed:(){
-       //     print("You fool!!");
-       //   },
-       //   onLongPress: (){
-       //     print("Dumbass!!");
-       //   },
-       // ),
-
-       // ElevatedButton(
-       //   child: Text("Click me!") ,
-       //   onPressed: (){
-       //     print("Fool x 2");
-       //     },
-       //   onLongPress:(){
-       //     print("Dumbass x 2");
-       //   },
-       // )
-
-       Center(
-         child: SizedBox(
-           height: 100,
-           width: 200,
-           child: OutlinedButton(
-             style: OutlinedButton.styleFrom(
-               foregroundColor: Colors.red,
-             ),
-             onPressed: (){
-               print("Clicked me!");
-             },
-             child:const Text("Tap Me"),
+       Column(
+         children: [
+           Row(
+             children: [
+               Center(
+                 child: TextButton(
+                   child: const Text('Click Me Text Button!!!'),
+                   onPressed:(){
+                     print("You fool!!");
+                   },
+                   onLongPress: (){
+                     print("Dumbass!!");
+                   },
+                 ),
+               ),
+               ElevatedButton(
+                 child: const Text("Click me Text Button!") ,
+                 onPressed: (){
+                   print("Fool x 2");
+                 },
+                 onLongPress:(){
+                   print("Dumbass x 2");
+                 },
+               ),
+               OutlinedButton(
+                 style: OutlinedButton.styleFrom(
+                   foregroundColor: Colors.red,
+                 ),
+                 onPressed: (){
+                   print("Clicked me!");
+                 },
+                 child:const Text("Tap Me"),
+               ),
+             ],
            ),
-         ),
-       )
+           Row(
+             children: [
+               Center(
+                 child: TextButton(
+                   child: const Text('Click Me Text Button!!!'),
+                   onPressed:(){
+                     print("You fool!!");
+                   },
+                   onLongPress: (){
+                     print("Dumbass!!");
+                   },
+                 ),
+               ),
+               ElevatedButton(
+                 child: const Text("Click me Text Button!") ,
+                 onPressed: (){
+                   print("Fool x 2");
+                 },
+                 onLongPress:(){
+                   print("Dumbass x 2");
+                 },
+               ),
+               OutlinedButton(
+                 style: OutlinedButton.styleFrom(
+                   foregroundColor: Colors.red,
+                 ),
+                 onPressed: (){
+                   print("Clicked me!");
+                 },
+                 child:const Text("Tap Me"),
+               ),
+             ],
+           ),
+         ],
+       ),
+
      );
   }
 }
